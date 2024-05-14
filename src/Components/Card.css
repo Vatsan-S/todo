@@ -1,0 +1,165 @@
+:root{
+    --clr-grey-bg: #F5F5F5;
+    --clr-text-dark: #292929;
+    --clr-text-light:#fff;
+    --clr-accent1: #599440;
+    --clr-danger: #D61F2C;
+    --clr-grey-bg2:#E8E8E8;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-grey-bg);
+    overflow: scroll;
+}
+
+.addTodo{
+    background-color: var(--clr-accent1);
+    color:var(--clr-text-light);
+    font-weight: medium;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.inputField{
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+.inputZone{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 08vh;
+}
+
+.inputZone h2{
+    color: var(--clr-text-dark);
+    margin-bottom: 32px;
+}
+
+.inputFieldGroup{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+.searchRow input{
+    outline: none;
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+}
+.searchRow button{
+    border: none;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.searchRow{
+    background-color: var(--clr-text-light);
+    border-radius: 8px;
+}
+
+.filter select{
+    border: none;
+    padding: 8px;
+    border-radius:8px;
+}
+.filter options{
+    padding: 8px;
+    border-bottom: 1px solid var(--clr-grey-bg);
+}
+.form{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+    
+    
+}
+
+.form-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.cardbody{
+    display: flex;
+    
+    margin: 32px;
+    flex-wrap: wrap;
+}
+.card-wrapper{
+    padding: 4px 8px;
+}
+
+.card{
+    border: none;
+    border-radius:  0 16px 16px 0;
+    background-color: white;
+    padding: 24px;
+    border-left: 5px solid var(--clr-accent1);
+    height: 230px;
+}
+
+.card h3{
+    color: var(--clr-text-dark);
+}
+.descriptionBox{
+    overflow:hidden
+}
+.card p{
+    color: var(--clr-text-dark);
+    opacity: 0.6;
+}
+.changeStatus{
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-grey-bg2);
+}
+.card-button{
+    display: flex;
+    gap: 16px;
+    
+
+}
+
+.card-button button{
+    border-radius: 4px;
+    padding: 4px 8px;
+    border: none;
+    /* color: var(--clr-text-light); */
+}
+.editCard{
+    background-color: var(--clr-text-dark);
+    color: var(--clr-text-light);
+}
+.deleteCard{
+    color:var(--clr-text-dark);
+    background-color: transparent;
+    opacity: 0.5;
+}
+
+.deleteCard:hover{
+    color: var(--clr-danger);
+    opacity: 1;
+}
+@media screen and (max-width:600px) {
+    .form{
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+}
